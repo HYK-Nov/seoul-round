@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import "tailwindcss";
+@import "flowbite/src/themes/default.css";
+
+@source "../node_modules/flowbite";
+@plugin "flowbite/plugin";
+
+@font-face {
+  font-family: "Tenada";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2")
+  format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#nav-burger {
+  display: none;
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  #nav-burger {
+    display: block;
+  }
+  #nav-menu {
+    display: none;
+  }
+}
+/* md */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* tailwind 커스텀 컬러 */
+@theme {
+  --color-primary: #3c00ff;
+  --color-secondary: #c9ff29;
+  --color-third: #f7fbfc;
+  --color-no1: #c54e05;
+  --color-no2: #d73c2c;
+  --color-no9: #008704;
+  --color-no16: #9C7C56;
+}
+
+button {
+  cursor: pointer;
+}
+
+head {
+  z-index: 999;
+}
+
+.tenada {
+  font-family: "Tenada";
+}
