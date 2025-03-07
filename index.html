@@ -7,7 +7,9 @@
     <title>Vite + TS</title>
   </head>
   <body>
-    <header class="fixed top-0 h-[80px] w-full px-[3rem]">
+  <header
+          class="bg-primary fixed top-0 h-[80px] w-full px-[1rem] md:px-[3rem]"
+  >
       <div class="flex h-full items-center justify-between text-white">
         <!-- 로고 -->
         <a href="./index.html">
@@ -22,7 +24,7 @@
               id="dropdownBeginnerBtn"
               data-dropdown-toggle="dropdownBeginner"
               data-dropdown-trigger="hover"
-              class="group flex items-center text-lg font-bold"
+              class="group flex items-center text-xl font-extrabold"
             >
               초급 코스
               <svg
@@ -106,7 +108,7 @@
               id="dropdownIntermediateBtn"
               data-dropdown-toggle="dropdownIntermediate"
               data-dropdown-trigger="hover"
-              class="group flex items-center text-lg font-bold"
+              class="group flex items-center text-xl font-extrabold"
             >
               중급 코스
               <svg
@@ -211,7 +213,7 @@
               id="dropdownAdvancedBtn"
               data-dropdown-toggle="dropdownAdvanced"
               data-dropdown-trigger="hover"
-              class="group flex items-center text-lg font-bold"
+              class="group flex items-center text-xl font-extrabold"
             >
               고급 코스
               <svg
@@ -582,22 +584,32 @@
         </ul>
       </div>
     </div>
-    <main>
+  <main class="bg-primary h-auto min-h-screen w-full pt-25 pb-10 lg:h-screen">
+    <!-- 무언가의 이미지 -->
+    <div class="hidden">
+      <img
+              src="public/image/s2.svg"
+              class="fixed -right-30 -bottom-[50px] w-[350px]"
+      />
+      <img
+              src="public/image/s1.svg"
+              class="fixed right-10 -bottom-0 w-[300px]"
+      />
+    </div>
+    <div
+            class="container grid h-full grid-cols-1 gap-6 lg:grid-cols-4 lg:gap-10"
+    >
+      <div class="w-full rounded-lg bg-slate-500 p-5">
+        <h1 class="text-5xl font-extrabold text-white">SAMPLE TEXT</h1>
+        <h1 class="text-secondary text-3xl font-medium">POINT COLOR</h1>
+      </div>
       <div
-        class="bg-primary h-auto min-h-screen w-full pt-25 pb-10 lg:h-screen"
+              class="col-span-3 h-[400px] w-full rounded-lg bg-white p-6 lg:h-full"
       >
-        <div
-          class="container grid h-full grid-cols-1 gap-6 lg:grid-cols-4 lg:gap-10"
-        >
-          <div class="w-full rounded-lg bg-slate-500 p-5">
-            <h1 class="text-5xl font-extrabold text-white">SAMPLE TEXT</h1>
-            <h1 class="text-secondary text-3xl font-medium">POINT COLOR</h1>
-          </div>
-          <div
-            class="col-span-3 h-[400px] w-full rounded-lg bg-white p-6 lg:h-full"
-          >
-            <p>ddddddd</p>
-          </div>
+        <img
+                src="https://velog.velcdn.com/images/gyuha/post/8960ac0b-47b6-4a3c-bb62-34ddf4c7f567/image.png"
+                class="w-full max-w-[500px]"
+        />
         </div>
       </div>
     </main>

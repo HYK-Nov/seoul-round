@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+/* 프리텐다드 폰트 */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
 @import "tailwindcss";
 @import "flowbite/src/themes/default.css";
 
 @source "../node_modules/flowbite";
 @plugin "flowbite/plugin";
 
+/* 태나다 폰트 */
 @font-face {
   font-family: "Tenada";
   src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2")
@@ -14,7 +16,7 @@
 }
 
 html {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Pretendard", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 
@@ -80,22 +82,49 @@ html {
 /* tailwind 커스텀 컬러 */
 @theme {
   --color-primary: #3c00ff;
-  --color-secondary: #c9ff29;
+  --color-primary-dark: #3e0ad2;
+  --color-secondary: #c8ff00;
   --color-third: #f7fbfc;
   --color-no1: #c54e05;
   --color-no2: #d73c2c;
+  --color-no3: #454F7D;
+  --color-no4: #9E5499;
+  --color-no5: #be43aa;
+  --color-no6: #007cbc;
+  --color-no7: #1b8192;
+  --color-no8: #445C57;
   --color-no9: #008704;
+  --color-no10: #387D57;
+  --color-no11: #A14F8C;
+  --color-no12: #8e57bf;
+  --color-no13: #be4f68;
+  --color-no14: #ce3f3f;
+  --color-no15: #87674D;
   --color-no16: #9C7C56;
+  --color-no17: #835573;
+  --color-no18: #847513;
+  --color-no19: #30713c;
+  --color-no20: #247D6E;
+  --color-no21: #008189;
+}
+
+header{
+  z-index: 9999;
+}
+
+/* nav panel z-index 설정 */
+[drawer-backdrop]{
+  z-index: 99998;
+}
+#nav-panel{
+  z-index: 99999;
 }
 
 button {
   cursor: pointer;
 }
 
-head {
-  z-index: 999;
-}
-
+/* 태나다 폰트 클래스 */
 .tenada {
   font-family: "Tenada";
 }

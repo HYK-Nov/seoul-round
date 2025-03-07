@@ -25,6 +25,7 @@
     "sourceMap": true,
     "declaration": true,
     "noImplicitAny": true,
+    "types": ["kakao.maps.d.ts"]
   },
   "include": ["src/**/*.ts*"],
   "exclude": ["node_modules", "dist", "lib"]
