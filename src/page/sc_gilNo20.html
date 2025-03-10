@@ -275,7 +275,7 @@
         <div id="nav-burger">
             <!-- nav menu 버튼 -->
             <button
-                    class="text-primary inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm hover:bg-gray-100/20 focus:outline-none"
+                    class="text-primary inline-flex h-12 w-12 items-center justify-center rounded-lg p-2 text-sm focus:outline-none"
                     type="button"
                     data-drawer-target="nav-panel"
                     data-drawer-show="nav-panel"
@@ -283,7 +283,7 @@
                     aria-controls="nav-panel"
             >
                 <svg
-                        class="h-7 w-7"
+                        class="h-full w-full"
                         stroke="currentColor"
                         fill="currentColor"
                         stroke-width="0"
@@ -298,7 +298,7 @@
         </div>
     </div>
 </header>
-<!-- 모바일 nav panel -->
+<!--  모바일 nav panel -->
 <div
         id="nav-panel"
         class="fixed top-0 right-0 z-40 h-screen w-80 translate-x-full overflow-y-auto rounded-s-lg bg-white p-4 transition-transform dark:bg-gray-800"
@@ -307,7 +307,7 @@
 >
     <h5
             id="nav-panel-label"
-            class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400"
+            class="text-xl font-bold text-gray-500 uppercase dark:text-gray-400"
     >
         Menu
     </h5>
@@ -336,7 +336,7 @@
     </button>
     <!-- 모바일 nav panel elements -->
     <div class="overflow-y-auto py-4">
-        <ul class="space-y-2 font-medium">
+        <ul class="space-y-3 font-lg">
             <li>
                 <button
                         type="button"
@@ -346,7 +346,7 @@
                         data-collapse-toggle="nav-dropdown-beginner"
                 >
               <span
-                      class="ms-3 flex-1 text-left whitespace-nowrap rtl:text-right"
+                      class="ms-3 flex-1 text-left whitespace-nowrap rtl:text-right font-bold"
               >초급 코스</span
               >
                     <svg
@@ -427,7 +427,7 @@
                         data-collapse-toggle="nav-dropdown-itermediate"
                 >
               <span
-                      class="ms-3 flex-1 text-left whitespace-nowrap rtl:text-right"
+                      class="ms-3 flex-1 text-left whitespace-nowrap rtl:text-right font-bold"
               >중급 코스</span
               >
                     <svg
@@ -529,7 +529,7 @@
                         data-collapse-toggle="nav-dropdown-advanced"
                 >
               <span
-                      class="ms-3 flex-1 text-left whitespace-nowrap rtl:text-right"
+                      class="ms-3 flex-1 text-left whitespace-nowrap rtl:text-right font-bold"
               >고급 코스</span
               >
                     <svg
@@ -583,8 +583,13 @@
         </ul>
     </div>
 </div>
-<main class="h-auto min-h-screen w-full lg:h-screen">
+<main class="h-auto min-h-screen w-full lg:h-screen break-keep">
     <div class="p container flex flex-col gap-y-16 py-30">
+        <!--코스 카테고리-->
+        <div class="flex flex-col gap-3">
+            <p class="font-black text-5xl text-no20">20코스 북한산 강북</p>
+            <p class="text-neutral-500 font-extrabold text-2xl">중급 코스</p>
+        </div>
         <!-- 탭 메뉴 -->
         <div class="grid grid-cols-2 gap-x-8 gap-y-4 text-lg md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
             <button
@@ -683,7 +688,72 @@
             </div>
         </div>
         <!-- 코스 이미지(가칭) -->
-        <div class="flex flex-col items-center gap-6">
+        <div class="flex flex-col items-center gap-20">
+            <!-- 코스 과정 -->
+            <div class="text-xl font-bold grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 w-full gap-y-6 px-10 text-center">
+                <div class="flex flex-col items-center gap-2 w-full">
+                    <div class="flex w-full items-center justify-center gap-4">
+                        <div class="flex gap-1 w-full items-end">
+                            <img src="../../public/image/circle.svg" alt="" class="w-3 translate-y-1/2"/>
+                            <div class="border-b-2 h-1/2 w-full border-dotted"></div>
+                        </div>
+                        <img src="../../public/image/stamp.svg" class="w-6"/>
+                        <div class="border-b-2 h-1/2 w-full border-dotted"></div>
+                    </div>
+                    <p class="px-3">화계사 입구</p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <div class="flex w-full items-center justify-center gap-4 px-[1px]">
+                        <div class="border-b-2 h-1/2 w-full border-dotted"></div>
+                        <img src="../../public/image/location.svg" class="w-6"/>
+                        <div class="border-b-2 h-1/2 w-full border-dotted"></div>
+                    </div>
+                    <p class="px-3">국립통일교육원</p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <div class="flex w-full items-center justify-center gap-4 px-[1px]">
+                        <div class="border-b-2 h-1/2 w-full border-dotted"></div>
+                        <img src="../../public/image/location.svg" class="w-6"/>
+                        <div class="border-b-2 h-1/2 w-full border-dotted"></div>
+                    </div>
+                    <p class="px-3">국립4.19민주묘지전망대</p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <div class="flex w-full items-center justify-center gap-4 px-[1px]">
+                        <div class="border-b-2 h-1/2 w-full border-dotted"></div>
+                        <img src="../../public/image/location.svg" class="w-6"/>
+                        <div class="border-b-2 h-1/2 w-full border-dotted"></div>
+                    </div>
+                    <p class="px-3">솔밭근린공원</p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <div class="flex w-full items-center justify-center gap-4 px-[1px]">
+                        <div class="border-b-2 h-1/2 w-full border-dotted"></div>
+                        <img src="../../public/image/location.svg" class="w-6"/>
+                        <div class="border-b-2 h-1/2 w-full border-dotted"></div>
+                    </div>
+                    <p class="px-3">박을복자수박물관</p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <div class="flex w-full items-center justify-center gap-4 px-[1px]">
+                        <div class="border-b-2 h-1/2 w-full border-dotted"></div>
+                        <img src="../../public/image/location.svg" class="w-6"/>
+                        <div class="border-b-2 h-1/2 w-full border-dotted"></div>
+                    </div>
+                    <p class="px-3">우이동 만남의광장</p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <div class="flex w-full items-center justify-center gap-4">
+                        <div class="border-b-2 h-1/2 w-full border-dotted"></div>
+                        <img src="../../public/image/stamp.svg" class="w-6"/>
+                        <div class="flex gap-1 w-full items-end">
+                            <div class="border-b-2 h-1/2 w-full border-dotted"></div>
+                            <img src="../../public/image/arrow.svg" alt="" class="h-3 translate-y-1/2 -rotate-90"/>
+                        </div>
+                    </div>
+                    <p class="px-3">북한산우이역</p>
+                </div>
+            </div>
             <!-- 카카오맵 약도 -->
             <div class="w-3/4 h-full max-w-[700px]">
                 <div>
@@ -791,6 +861,11 @@
         </div>
     </div>
 </main>
+<!-- 스크롤 버튼 -->
+<button id="scroll-top"
+        class="w-[60px] h-[60px]  bg-white/50 hover:bg-primary/10 border-4 border-primary rounded-full fixed bottom-4 right-4 flex justify-center items-center invisible">
+    <img src="../../public/image/arrow_scroll.svg" class="h-3/4"/>
+</button>
 </body>
 <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
 <script type="module" src="../main.ts"></script>
