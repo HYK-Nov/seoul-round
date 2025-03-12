@@ -6,7 +6,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@radix-ui/react-navigation-menu";
-import { cn } from "@/lib/utils.ts";
+import { cn } from "@/utils/cn.ts";
 import { FaAngleDown } from "react-icons/fa6";
 import { NavLink } from "react-router";
 
@@ -131,9 +131,6 @@ const ListItem = ({
           {...props}
         >
           <div className="text-sm leading-none font-medium">{title}</div>
-          <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
-            {children}
-          </p>
         </NavLink>
       </NavigationMenuLink>
     </li>

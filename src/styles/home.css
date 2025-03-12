@@ -7,12 +7,13 @@
     animation: drawLine 2s forwards, fillArea 1s 1s forwards;
 }
 
-#main-map #map-node {
+#map-node {
     visibility: hidden;
-    animation: fadeIn 0.5s forwards;
+    animation: fadeInNode 0.5s forwards;
     animation-delay: 1s;
 }
-@keyframes fadeIn {
+
+@keyframes fadeInNode {
     from {
         opacity: 0;
     }
