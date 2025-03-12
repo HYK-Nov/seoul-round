@@ -1,6 +1,6 @@
 # 서울한바퀴
 
-![Image](https://github.com/user-attachments/assets/517ab8d4-a06f-4ba5-8478-59ea89f4e2f8)
+<img src="https://github.com/user-attachments/assets/517ab8d4-a06f-4ba5-8478-59ea89f4e2f8" width="400"/>
 
 ## 프로젝트 소개
 총 21 코스 서울 둘레길을 소개하는 사이트

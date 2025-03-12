@@ -27,7 +27,7 @@ export default function ScrollToTop() {
       className={`hover:bg-primary/10 border-primary fixed right-4 bottom-4 flex h-[60px] w-[60px] items-center justify-center rounded-full border-4 bg-white/50 ${invisible && "invisible"}`}
       onClick={onClickScrollToTop}
     >
-      <img src="/public/image/arrow_scroll.svg" className="h-3/4" />
+      <img src="/image/arrow_scroll.svg" className="h-3/4" />
     </button>
   );
 }
