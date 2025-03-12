@@ -58,7 +58,7 @@ export default function CourseTransport({
                   e.subType?.map((item) => (
                     <div className="flex justify-center gap-3">
                       <img
-                        src={`/public/image/subway/${MetroLine[item]}.svg`}
+                        src={`/image/subway/${MetroLine[item]}.svg`}
                         className="w-6"
                       />
                       <p>{item}</p>
@@ -67,7 +67,7 @@ export default function CourseTransport({
                 ) : (
                   <div className="flex justify-center gap-3">
                     <img
-                      src={`/public/image/subway/${MetroLine[e.subType]}.svg`}
+                      src={`/image/subway/${MetroLine[e.subType]}.svg`}
                       className="w-6"
                     />
                     <p>{e.subType}</p>
@@ -93,13 +93,13 @@ export default function CourseTransport({
                   e.subType.length > 1 &&
                   e.subType?.map((item) => (
                     <div className="flex justify-center gap-3">
-                      <img src="/public/image/bus.svg" className="w-6" />
+                      <img src="/image/bus.svg" className="w-6" />
                       <p>{item}</p>
                     </div>
                   ))
                 ) : (
                   <div className="flex justify-center gap-3">
-                    <img src="/public/image/bus.svg" className="w-6" />
+                    <img src="/image/bus.svg" className="w-6" />
                     <p>{e.subType}</p>
                   </div>
                 )}

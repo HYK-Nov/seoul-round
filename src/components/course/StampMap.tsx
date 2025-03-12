@@ -9,7 +9,7 @@ export default function StampMap({
   return (
     <div className="flex flex-col items-center gap-14">
       <div className="flex items-center gap-4">
-        <img src="/public/image/stamp.svg" alt="" className="w-10" />
+        <img src="/image/stamp.svg" alt="" className="w-10" />
         <p className="text-4xl font-black">스탬프 시설위치</p>
       </div>
       <div
@@ -21,7 +21,7 @@ export default function StampMap({
         {data.map((item) => (
           <Link to={item.location} target={"_blank"}>
             <button className="bg-primary hover:bg-primary-dark flex w-fit items-center gap-2 rounded-full px-5 py-3 font-bold text-white transition duration-75 hover:text-white">
-              <img src="/public/image/location_reverse.svg" className="w-6" />
+              <img src="/image/location_reverse.svg" className="w-6" />
               <p className="text-lg">{item.title}</p>
             </button>
           </Link>

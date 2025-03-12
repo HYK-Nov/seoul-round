@@ -272,7 +272,7 @@ export default function Home() {
               시작하기
             </button>
           </Link>
-          <img src="/public/image/s3.svg" className="w-7/12" />
+          <img src="/image/s3.svg" className="w-7/12" />
         </div>
       </div>
     </main>

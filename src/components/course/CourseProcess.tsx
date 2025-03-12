@@ -22,14 +22,14 @@ export default function CourseProcess({
             <div className="flex w-full items-center justify-center gap-4">
               <div className="flex w-full items-end gap-1">
                 <img
-                  src="/public/image/circle.svg"
+                  src="/image/circle.svg"
                   alt=""
                   className="w-3 translate-y-1/2"
                 />
                 <div className="h-1/2 w-full border-b-2 border-dotted"></div>
               </div>
               <img
-                src={`/public/image/${item.isStamp ? "stamp" : "location"}.svg`}
+                src={`/image/${item.isStamp ? "stamp" : "location"}.svg`}
                 className="w-6"
               />
               <div className="h-1/2 w-full border-b-2 border-dotted"></div>
@@ -41,13 +41,13 @@ export default function CourseProcess({
             <div className="flex w-full items-center justify-center gap-4">
               <div className="h-1/2 w-full border-b-2 border-dotted"></div>
               <img
-                src={`/public/image/${item.isStamp ? "stamp" : "location"}.svg`}
+                src={`/image/${item.isStamp ? "stamp" : "location"}.svg`}
                 className="w-6"
               />
               <div className="flex w-full items-end gap-1">
                 <div className="h-1/2 w-full border-b-2 border-dotted"></div>
                 <img
-                  src="/public/image/arrow.svg"
+                  src="/image/arrow.svg"
                   alt=""
                   className="h-3 translate-y-1/2 -rotate-90"
                 />
@@ -60,7 +60,7 @@ export default function CourseProcess({
             <div className="flex w-full items-center justify-center gap-4 px-[1px]">
               <div className="h-1/2 w-full border-b-2 border-dotted"></div>
               <img
-                src={`/public/image/${item.isStamp ? "stamp" : "location"}.svg`}
+                src={`/image/${item.isStamp ? "stamp" : "location"}.svg`}
                 className="w-6"
               />
               <div className="h-1/2 w-full border-b-2 border-dotted"></div>
