@@ -183,7 +183,7 @@ button {
   cursor: pointer;
 }
 
-.scrollBtn{
+#scrollBtn{
   z-index: 9;
 }
 
