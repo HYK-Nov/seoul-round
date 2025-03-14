@@ -4,7 +4,7 @@ import Logo from "@/components/Logo.tsx";
 
 export default function Header() {
   return (
-    <header className="fixed top-0 flex h-[80px] w-full items-center justify-between bg-white px-[3rem]">
+    <header className="fixed top-0 flex h-[80px] w-full items-center justify-between bg-white px-[2rem] md:px-[3rem]">
       {/* 로고 */}
       <button
         onClick={() => {

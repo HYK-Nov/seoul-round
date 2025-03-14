@@ -183,6 +183,10 @@ button {
   cursor: pointer;
 }
 
+.scrollBtn{
+  z-index: 9;
+}
+
 /* 태나다 폰트 클래스 */
 .tenada {
   font-family: "Tenada";
